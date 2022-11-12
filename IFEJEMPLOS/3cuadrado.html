@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="css.css">
+    <title>ERICKA</title>
+    <script>
+        var opcion;
+        var num1;
+        var num2;
+        var desi;
+        var resul
+        var n1
+        var n2
+        desi=window.prompt("¿Cuadrado o Rectangulo?")
+        
+        if (desi=="cuadrado")
+            {
+                opcion=window.prompt("digite su posicion:"+"1.Área de Cuadrado, "+"2.Perimetro de un cuadrado")
+                n1=window.prompt("Digite su primer numero");
+            }
+        if(desi=="rectangulo")
+        {
+            opcion=window.prompt("digite su posicion:"+"3.Área de un rectangulo, "+"4.Perimetro de un rectangulo")
+            n1=window.prompt("Digite su primer numero");
+            n2=window.prompt("Digite su segundo numero");
+        }
+        num1=parseInt(n1)
+        num2=parseInt(n2)
+        switch(opcion){
+        case"1":
+            resul=num1*num1
+            document.writeln("El resultado de la operación: "+resul)
+            break
+        case"2":
+            resul=num1*4
+            document.writeln("El resultado de la operación: "+resul)
+            break
+        case"3":
+            resul=num1*num2
+            document.writeln("El resultado de la operación: "+resul)
+            break
+        case"4":
+            resul=num1*2+num2*2
+            document.writeln("El resultado de la operación: "+resul)
+            break
+
+        }
+        
+        
+    
+        
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

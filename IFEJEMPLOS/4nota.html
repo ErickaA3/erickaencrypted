@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="css.css">
+    <title>ERICKA</title>
+    <script>
+        var notas=[0, 0, 0 ,0 ,0]
+        var no1=0
+        var no2=0
+        var no3=0
+        var no4=0
+        var no5=0
+        var resultadopro
+        no1=window.prompt("Digite su primera nota")
+        no2=window.prompt("Digite su segunda nota")
+        no3=window.prompt("Digite su tercera nota")
+        no4=window.prompt("Digite su cuarta nota")
+        no5=window.prompt("Digite su quinta nota")
+        notas[0]=parseInt(no1)
+        notas[1]=parseInt(no2)
+        notas[2]=parseInt(no3)
+        notas[3]=parseInt(no4)
+        notas[4]=parseInt(no5)
+        resultadopro= notas[0]+notas[1]+notas[2]+notas[3]+notas[4]
+        resultadopro=resultadopro/3
+        if (resultadopro>=90) {
+            document.writeln("<p> Su promedio es de: "+resultadopro+"</p>"+"<p>¡Exelente!</p>")
+
+        }
+        else
+            document.writeln("<p> Su promedio es de: "+resultadopro+"</p>"+"<p>¡Puedes superarte!</p>")
+
+    
+        
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

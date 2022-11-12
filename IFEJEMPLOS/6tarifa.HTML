@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="uft-8">
+        <title>ERICKA1</title>
+        
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+        <style>
+       
+        </style>
+        <Script>
+            var tarifa;
+            var horas;
+            var total;
+            var horasA
+            tarifa= window.prompt("¿Cúal es su tarifa por hora?")
+            horasA= window.prompt("¿Cuantas horas trabajo?")
+            if(horasA <= 40){
+                horas= parseInt(horasA);
+                total= tarifa * horas;
+                document.writeln("Su sueldo bruto es:"+ total);
+            }
+            else{
+                horas= parseInt(horasA);
+                horas - 40;
+                horas * 1.5;
+                
+                total= (horas + 40) * tarifa ;
+                document.writeln("Su sueldo bruto es:"+ total);
+            }
+             
+        </Script>
+       </head><body>
+        
+       </body>
+    </head>
