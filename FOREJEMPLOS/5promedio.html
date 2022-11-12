@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERICKAPRACTICA2</title>
+    <script >
+        
+        var d=1
+        var resultado
+        var c=new Array(14)
+        
+        for(;d<=14;++d)
+        {
+            c[d]=parseInt(window.prompt("Digite la "+ d+" materia"))
+        }
+        resultado=c[1]+c[2]+c[3]+c[4]+c[5]+c[6]+c[7]+c[8]+c[9]+c[10]+c[11]+c[12]+c[13]+c[14];
+        document.writeln("<h1>Promedio de 14 materias</h1>")
+        document.writeln("<p>Su promedio es de: "+resultado.toFixed(2)/14+"</p>")
+  
+       
+    </script>
+</head>
+<body>
+</body>
+</html>
