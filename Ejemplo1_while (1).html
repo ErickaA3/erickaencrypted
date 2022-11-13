@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ErickaEncrypted</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="estrella.png">
+
+    <Style>
+      h1{color: white;}
+
+    </Style>
+</head>
+<body>
+  <div id="particles-js"></div>
+  <script src="js/particles.min.js"></script>
+  <script src="js/particlesjs-config.js"></script>
+
+   <h1 style="text-align: center">Hacer un Ahorro</h1>
+      <div class="contenido4" >
+        <p>Este ejemplo es un ciclo pequeño de cuanto tiene ahorrado en 3 años</p> 
+        <p>1️⃣Tres variable, la primera “deposito” que es lo que pondrá el usuario, la variable “d” en 0, que es la que utiliza el while para el ciclo y “porcentaje” que el interés, 4%</p> 
+        <p>2️⃣El while tiene como condición d<=2, esto para que queden los 3 años, porque d comienza en 0.</p>
+         <p>3️⃣Lo que hace el ciclo es, primero a la variable total le asigna el primer año de interés(depósito*porcentaje) después el porcentaje de interés aumenta por año-->porcentaje =porcentaje +0.04 Y la variable de ciclo aumenta 1</p> 
+        <p>4️⃣Imprime los 3 años con sus aumento de interés y utiliza la función toFixed(2)<--para mostrar en pantalla sólo 2 decimales. </p>
+      </div>
+      <caption></caption>
+    <div class="contenido4" >
+      <blockquote>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#339933">&lt;!</font>DOCTYPE&nbsp;html<font color="#339933">&gt;</font><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;<font color="#339933">&lt;</font>html&nbsp;lang<font color="#339933">=</font><font color="#3366CC">&quot;en&quot;</font><font color="#339933">&gt;</font><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;<font color="#339933">&lt;</font>head<font color="#339933">&gt;</font><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#339933">&lt;</font>meta&nbsp;charset<font color="#339933">=</font><font color="#3366CC">&quot;UTF-8&quot;</font><font color="#339933">&gt;</font><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#339933">&lt;</font>meta&nbsp;http<font color="#339933">-</font>equiv<font color="#339933">=</font><font color="#3366CC">&quot;X-UA-Compatible&quot;</font>&nbsp;content<font color="#339933">=</font><font color="#3366CC">&quot;IE=edge&quot;</font><font color="#339933">&gt;</font><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#339933">&lt;</font>meta&nbsp;name<font color="#339933">=</font><font color="#3366CC">&quot;viewport&quot;</font>&nbsp;content<font color="#339933">=</font><font color="#3366CC">&quot;width=device-width,&nbsp;initial-&nbsp;<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scale=1.0&quot;</font><font color="#339933">&gt;</font><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#339933">&lt;</font>title<font color="#339933">&gt;</font>ErickaPractica<font color="#339933">&lt;/</font>title<font color="#339933">&gt;</font><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;<font color="#339933">&lt;/</font>head<font color="#339933">&gt;</font><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;<font color="#339933">&lt;</font>script<font color="#339933">&gt;</font><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000066">var</font>&nbsp;deposito<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000066">var</font>&nbsp;d<font color="#339933">=</font><font color="#CC0000">0</font><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000066">var</font>&nbsp;porcentaje<font color="#339933">=</font><font color="#CC0000">0.04</font><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;deposito<font color="#339933">=</font>window.<font color="#660066">prompt</font><font color="#009900">&#40;</font><font color="#3366CC">&quot;¿Cuanto&nbsp;dinero&nbsp;deposito&nbsp;a&nbsp;su&nbsp;cuenta&nbsp;<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;de&nbsp;ahorros?&quot;</font><font color="#009900">&#41;</font><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while<font color="#009900">&#40;</font>d<font color="#339933">&lt;=</font><font color="#CC0000">2</font><font color="#009900">&#41;</font><font color="#009900">&#123;</font><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;total<font color="#339933">=</font>deposito<font color="#339933">*</font>porcentaje<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;porcentaje<font color="#339933">=</font>porcentaje<font color="#339933">+</font><font color="#CC0000">0.04</font><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d<font color="#339933">++</font><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.<font color="#660066">write</font><font color="#009900">&#40;</font><font color="#3366CC">&quot;&lt;p&gt;Al&nbsp;&quot;</font><font color="#339933">+</font>d<font color="#339933">+</font><font color="#3366CC">&quot;&nbsp;año&nbsp;tiene&nbsp;ahorrado&nbsp;<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;em&gt;₡&quot;</font><font color="#339933">+</font>total.<font color="#660066">toFixed</font><font color="#009900">&#40;</font><font color="#CC0000">2</font><font color="#009900">&#41;</font><font color="#339933">+</font><font color="#3366CC">&quot;&nbsp;&lt;/em&gt;&lt;/p&gt;&quot;</font><font color="#009900">&#41;</font><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900">&#125;</font><br/>
+        &nbsp;<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;<font color="#339933">&lt;/</font>script<font color="#339933">&gt;</font><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;<font color="#339933">&lt;</font>body<font color="#339933">&gt;</font><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;<font color="#339933">&lt;/</font>body<font color="#339933">&gt;</font><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;<font color="#339933">&lt;/</font>html<font color="#339933">&gt;</font>&nbsp;</blockquote>
+    </div>
+
+    <a href="libros.html"><img class="imgA3"src="flecha-removebg-preview.png" alt="siguiente" width="70" height="70"></a>
+    <a href="WHILEEJEMPLOS/1dinero.html"><img class="imgA6"src="codigo.png" alt="siguiente" width="85" height="85"></a>
+    <a href="ejemplo_while.html"><img class="imgA4"src="rojo2.png" alt="siguiente" width="70" height="70"></a>
+    <a href="index.html"><img class="imgA5"src="csa.png" alt="siguiente" width="70" height="70"></a>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer class="pie">
+      <div class="grupo1">
+        <div class="box">
+          <figure>
+            <img src="logo.png" alt="">
+          </figure>
+        </div>
+        <div class="box">
+          <h2>SOBRE NOSOTROS</h2>
+          <p>Con esta pagina buscamos que puedas aprender un pinzelada</p>
+          <p>de este mundo de la programación, si quieres saber más sobre</p>
+          <p>estos temas, contactanos en nuestras redes sociales.</p>
+          <p>Gracias!</p>
+          <br>
+          <p></p>
+        </div>
+        <div class="box">
+          <h2>REDES SOCIALES</h2>
+          <div class="red-social">
+            <a href="https://github.com/ErickaA3" ><img src="gh.png" alt="github" width="45" height="45"></a>
+            <a href="https://twitter.com/Ericka53340286?t=m1lm6FpA-o2vGOh7n2dPFQ&s=08" ><img src="tw.png" alt="twitter" width="45" height="45"></a>
+            <a href="https://youtube.com/channel/UCQBn65ZvW7xdytHudcm5m6g"><img src="yt.png" alt="youtube" width="65" height="50"></a>
+    
+          </div>
+          
+          <div class="soporte">
+           <p><a  href="comentarios.html">Comentarios</a></p> 
+            <p><a href= mailto: arielaericka@gmail.com >Soporte</a></p>
+            <p><a href = mailto: arielaericka@gmail.com >Contactanos</a> </p>
+          </div>
+        </div>
+        <div class="box">
+          <h2>CRÉDITOS</h2>
+          <div class="soporte">
+            <p><a href="https://www.htmlcommentbox.com/">htmlcommentbox</a></p>
+            <p><a href="https://highlight.hohli.com/index.php">Highlight</a></p>
+            <p><a href="https://www.tidio.com/">Tidio</a></p>
+            <p><a href="https://vincentgarreau.com/particles.js/">Vincentgarreau</a></p>
+            <br>
+            <br>
+            <br>
+          </div> 
+             
+        </div>
+        <div class="box">
+          <div class="contenidomenu">
+            <details>
+              <summary>MENÚ</summary>
+                <ul>
+                  <p><a href="index.html">INICIO</a></p>
+                  <details>
+                  <summary><a href="ELECCION.html">FUNCIONES</a></summary>
+                  <ul>
+                  <ol><p><a href="forexplicacion.html">FOR</a></p></ol>
+                  
+                  <p><a href="while_explicacion.html">WHILE</a></p>
+                  
+                  <p><a href="if_explicacion.html">IF</a></p>
+                </ul>
+                </details>
+                  <p><a href="libros.html">Libros</a></p>
+                </ul>   
+    
+            </details> 
+            
+          </div>
+          <br>
+            
+            <br><br><br><br><br><br><br><br>
+        </div>
+    
+      </div>
+      <div class="grupo2">
+        <small>&copy; 2022 <b>ErickaEncrypted</b> Todos los derechos reservados.</small>
+      </div>
+    </footer>
+    <script src="//code.tidio.co/skgpezsftpgu3pywhb6tsyvtwky3t2hw.js" async></script>
+
+</body>
+</html>
