@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ErickaEncrypted</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="estrella.png">
+
+    <Style>
+      h1{color: white;}
+
+    </Style>
+</head>
+<body>
+
+  <div id="particles-js"></div>
+  <script src="js/particles.min.js"></script>
+  <script src="js/particlesjs-config.js"></script>
+ <h1 style="text-align: center">Llenar un Array de letras con un <strong>FOR</strong></h1>
+      <div class="contenido4" >
+        
+<p>El for ahorra código, y con este ejemplo se muestra, ya que sino habría que hacer una línea de código por cada ganador. </p> 
+<p>1️⃣Siempre recordar que también se puede hacer el código del Javascript en un archivo con extensión .js, llamándolo en html con script src= “nombre . js” </p>
+<p> 2️⃣Se crea la variable “d” que en este caso es la variable inicializadora del ciclo for, tiene asignado el 1,para que el ciclo comience por 1.</p>
+<p> 2️⃣El ciclo que cumplirá el for, tiene la inicialización del array con un campo de 10 //Importante al hacer un arreglo, es hacer uno nuevo “new Array” dentro de una variable “c” y asignarle los campos dentro del paréntesis “(10)”//. Después la condición que cumple “d<=10” que se leería como, hasta que d sea mayor o igual a 10 se termina el ciclo, y para que funcione el for y avance tenemos el “++d” que le sumará 1 cada “vuelta”.</p>
+<p> 3️⃣Dentro del for (importante usar llaves cuando se hace un for {}) Se pide que cada que se cumple el ciclo, la variable “c” con [ ], que los paréntesis cuadrados determinan la posición que se llenará del arreglo , entonces “c[d] “se refiere que la posición será 1,2,3,4.. Y se llenaran los 10 campos, por que la variable “d” es la del ciclo, entonces aumenta 1 cada que se cumpla, al estar así facilita ya que se nos ayudamos del for, por que esto bien se podría hacer así : C[1]=… C[2]=… Y seguiría, pero en situaciones que sean muchos más de 10 un ciclo es la mejor opción. </p>
+<p> 4️⃣c[d] = window.prompt El “window.prompt” se refiere que saldrá una ventana emergente en la página y será input, el usuario podrá poner en este caso el nombre del ganador, y lo hará 10 veces, como es el ciclo que esta cumpliendo el for.</p>
+<p> 5️⃣Después lo que se imprime en la pantalla es “d” que es la posición, la que se suma cada vez ej: <strong>1. </strong>Ericka  es el campo que lleno el usuario (c[d]) Esto se hace 10 veces porque también está dentro del for</p>
+      </div>
+      <caption></caption>
+    <div class="contenido4" >
+      <blockquote><font color="#00bbdd">&lt;!DOCTYPE&nbsp;html&gt;</font><br/>
+        <font color="#009900">&lt;<font color="#000000">html</font>&nbsp;<font color="#000066">lang</font><font color="#66cc66">=</font><font color="#ff0000">&quot;en&quot;</font>&gt;</font><br/>
+        <font color="#009900">&lt;<font color="#000000">head</font>&gt;</font><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900">&lt;<font color="#000000">meta</font>&nbsp;<font color="#000066">charset</font><font color="#66cc66">=</font><font color="#ff0000">&quot;UTF-8&quot;</font>&gt;</font><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900">&lt;<font color="#000000">meta</font>&nbsp;<font color="#000066">http-equiv</font><font color="#66cc66">=</font><font color="#ff0000">&quot;X-UA-Compatible&quot;</font>&nbsp;<font color="#000066">content</font><font color="#66cc66">=</font><font color="#ff0000">&quot;IE=edge&quot;</font>&gt;</font><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900">&lt;<font color="#000000">meta</font>&nbsp;<font color="#000066">name</font><font color="#66cc66">=</font><font color="#ff0000">&quot;viewport&quot;</font>&nbsp;<font color="#000066">content</font><font color="#66cc66">=</font><font color="#ff0000">&quot;width=device-width,&nbsp;initial-scale=1.0&quot;</font>&gt;</font><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900">&lt;<font color="#000000">title</font>&gt;</font>ERICKAPRACTICA2<font color="#009900">&lt;<font color="#66cc66">/</font><font color="#000000">title</font>&gt;</font><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900">&lt;<font color="#000000">Script</font>&gt;</font><br/>
+        &nbsp;<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;d=1<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.writeln(&quot;<font color="#009900">&lt;<font color="#000000">h1</font>&gt;</font>Lista&nbsp;de&nbsp;ganadores&nbsp;del&nbsp;Gran&nbsp;Bingo<font color="#009900">&lt;<font color="#66cc66">/</font><font color="#000000">h1</font>&gt;</font>&quot;)<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(var&nbsp;c=&nbsp;new&nbsp;Array(10);d<font color="#009900">&lt;<font color="#66cc66">=</font><font color="#cc66cc">10</font>;++d<font color="#66cc66">&#41;</font></font><br/>
+        <font color="#009900">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#66cc66">&#123;</font></font><br/>
+        <font color="#009900">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c<font color="#66cc66">&#91;</font>d<font color="#66cc66">&#93;</font><font color="#66cc66">=</font>window.<font color="#000066">prompt</font><font color="#66cc66">&#40;</font><font color="#ff0000">&quot;¿Cual&nbsp;fue&nbsp;el&nbsp;&quot;</font>+&nbsp;d+<font color="#ff0000">&quot;°&nbsp;ganador?&quot;</font><font color="#66cc66">&#41;</font></font><br/>
+        <font color="#009900">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.writeln<font color="#66cc66">&#40;</font><font color="#00000">&quot;&lt;p&gt;</font></font>&quot;+d+&quot;.&quot;+c[d]+&quot;<font color="#009900">&lt;<font color="#66cc66">/</font><font color="#000000">p</font>&gt;</font>&quot;)<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
+        &nbsp;<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900">&lt;<font color="#66cc66">/</font><font color="#000000">Script</font>&gt;</font><br/>
+        <font color="#009900">&lt;<font color="#66cc66">/</font><font color="#000000">head</font>&gt;</font><br/>
+        <font color="#009900">&lt;<font color="#000000">body</font>&gt;</font><br/>
+        &nbsp;<br/>
+        <font color="#009900">&lt;<font color="#66cc66">/</font><font color="#000000">body</font>&gt;</font><br/>
+        <font color="#009900">&lt;<font color="#66cc66">/</font><font color="#000000">html</font>&gt;</font></blockquote> 
+    </div>
+    <a href="libros.html"><img class="imgA3"src="flecha-removebg-preview.png" alt="siguiente" width="70" height="70"></a>
+   <a href="FOREJEMPLOS/1Ganadores.html"><img class="imgA6"src="codigo.png" alt="siguiente" width="85" height="85"></a>
+   <a href="ejemplo_for.html"><img class="imgA4"src="rojo2.png" alt="siguiente" width="70" height="70"></a>
+   <a href="index.html"><img class="imgA5"src="csa.png" alt="siguiente" width="70" height="70"></a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer class="pie">
+      <div class="grupo1">
+        <div class="box">
+          <figure>
+            <img src="logo.png" alt="">
+          </figure>
+        </div>
+        <div class="box">
+          <h2>SOBRE NOSOTROS</h2>
+          <p>Con esta pagina buscamos que puedas aprender un pinzelada</p>
+          <p>de este mundo de la programación, si quieres saber más sobre</p>
+          <p>estos temas, contactanos en nuestras redes sociales.</p>
+          <p>Gracias!</p>
+          <br>
+          <p></p>
+        </div>
+        <div class="box">
+          <h2>REDES SOCIALES</h2>
+          <div class="red-social">
+            <a href="https://github.com/ErickaA3" ><img src="gh.png" alt="github" width="45" height="45"></a>
+            <a href="https://twitter.com/Ericka53340286?t=m1lm6FpA-o2vGOh7n2dPFQ&s=08" ><img src="tw.png" alt="twitter" width="45" height="45"></a>
+            <a href="https://youtube.com/channel/UCQBn65ZvW7xdytHudcm5m6g"><img src="yt.png" alt="youtube" width="65" height="50"></a>
+    
+          </div>
+          
+          <div class="soporte">
+           <p><a  href="comentarios.html">Comentarios</a></p> 
+            <p><a href= mailto: arielaericka@gmail.com >Soporte</a></p>
+            <p><a href = mailto: arielaericka@gmail.com >Contactanos</a> </p>
+          </div>
+        </div>
+        <div class="box">
+          <h2>CRÉDITOS</h2>
+          <div class="soporte">
+            <p><a href="https://www.htmlcommentbox.com/">htmlcommentbox</a></p>
+            <p><a href="https://highlight.hohli.com/index.php">Highlight</a></p>
+            <p><a href="https://www.tidio.com/">Tidio</a></p>
+            <p><a href="https://vincentgarreau.com/particles.js/">Vincentgarreau</a></p>
+            <br>
+            <br>
+            <br>
+          </div> 
+             
+        </div>
+        <div class="box">
+          <div class="contenidomenu">
+            <details>
+              <summary>MENÚ</summary>
+                <ul>
+                  <p><a href="index.html">INICIO</a></p>
+                  <details>
+                  <summary><a href="ELECCION.html">FUNCIONES</a></summary>
+                  <ul>
+                  <ol><p><a href="forexplicacion.html">FOR</a></p></ol>
+                  
+                  <p><a href="while_explicacion.html">WHILE</a></p>
+                  
+                  <p><a href="if_explicacion.html">IF</a></p>
+                </ul>
+                </details>
+                  <p><a href="libros.html">Libros</a></p>
+                </ul>   
+    
+            </details> 
+            
+          </div>
+          <br>
+            
+            <br><br><br><br><br><br><br><br>
+        </div>
+    
+      </div>
+      <div class="grupo2">
+        <small>&copy; 2022 <b>ErickaEncrypted</b> Todos los derechos reservados.</small>
+      </div>
+    </footer>
+   
+  <script src="//code.tidio.co/skgpezsftpgu3pywhb6tsyvtwky3t2hw.js" async></script>
+
+</body>
+</html>
