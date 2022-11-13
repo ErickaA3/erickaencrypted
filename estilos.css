@@ -5,6 +5,7 @@
   
 }
 body{
+    overflow:scroll;
     background-repeat: no-repeat;
     background-size: 100%;
     background-color:  rgb(47, 11, 105);
