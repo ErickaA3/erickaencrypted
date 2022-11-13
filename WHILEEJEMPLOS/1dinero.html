@@ -1,0 +1,24 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ErickaPractica</title>
+    </head>
+    <script>
+         var deposito
+         var d=0
+         var porcentaje=0.04
+         deposito=window.prompt("¿Cuanto dinero deposito a su cuenta de ahorros?")
+         while(d<=2){
+            total=deposito*porcentaje
+            porcentaje=porcentaje+0.04
+            d++
+            document.write("<p>Al "+d+" año tiene ahorrado <em>₡"+total.toFixed(2)+" </em></p>")
+         }
+
+    </script>
+    <body>
+    </body>
+    </html> 
